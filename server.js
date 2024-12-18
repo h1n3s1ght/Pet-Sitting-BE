@@ -13,6 +13,7 @@ const Client = require('./models/Client');
 // MongoDB Connection
 const mongoURI = process.env.MONGO_URI;
 
+
 mongoose
   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected successfully'))
